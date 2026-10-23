@@ -1,0 +1,44 @@
+{
+  "existing": {
+    "translate": {
+      "TRANSLATE00": {
+        "file": "s28",
+        "output": "s29",
+        "target_language": "s2a",
+        "text": "s2b",
+        "id": "TRANSLATE00"
+      },
+      "TRANSLATE01": {
+        "file": "s50",
+        "output": "s51",
+        "target_language": "s52",
+        "text": "s53",
+        "id": "TRANSLATE01"
+      },
+      "TRANSLATE02": {
+        "file": "s78",
+        "output": "s79",
+        "target_language": "s7a",
+        "text": "s7b",
+        "id": "TRANSLATE02"
+      }
+    }
+  },
+  "new": {
+    "translate": {
+      "translate_ref01": {
+        "file": "sa0",
+        "output": "sa1",
+        "target_language": "sa2",
+        "text": "sa3"
+      }
+    }
+  },
+  "requests": {
+    "POST /v1/translate": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

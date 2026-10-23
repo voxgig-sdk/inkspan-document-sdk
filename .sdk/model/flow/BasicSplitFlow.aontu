@@ -1,0 +1,18 @@
+# BasicSplitFlow
+
+main: kit: flow: BasicSplitFlow:
+{
+  entity: "split",
+  kind: "basic",
+  name: "BasicSplitFlow",
+  step: [
+    {
+      i: {
+        ref: "split_ref01"
+      }
+
+      o: "create"
+    }
+  ],
+  "key$": "BasicSplitFlow"
+}

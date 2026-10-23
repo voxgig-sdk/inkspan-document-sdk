@@ -1,0 +1,93 @@
+# Entity: watermark
+
+main: kit: entity: watermark: {
+
+  alias: field: {}
+
+  fields: {
+    file: {
+      h: "File"
+      n: "file"
+      r: true
+      t: "`$STRING`"
+    }
+    text: {
+      h: "Text"
+      n: "text"
+      r: false
+      t: "`$STRING`"
+    }
+  }
+
+  name: "watermark"
+  op: {
+    create: {
+      name: "create"
+      points: [
+        {
+          co: {
+            id: "POST /v1/pdf/watermark"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            header: [
+              {
+                k: "header"
+                n: "x_api_key"
+                or: "x-api-key"
+                r: false
+                t: "`$ANY`"
+              }
+              {
+                k: "header"
+                n: "x_rapidapi_proxy_secret"
+                or: "x-rapidapi-proxy-secret"
+                r: false
+                t: "`$ANY`"
+              }
+            ]
+          }
+          m: "POST"
+          o: "/v1/pdf/watermark"
+          rb: {
+            fields: [
+              {
+                binary: true
+                media: "application/octet-stream"
+                name: "file"
+              }
+              {
+                name: "text"
+              }
+            ]
+            kind: "multipart"
+            media: "multipart/form-data"
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "v1"
+            }
+            {
+              lit: "pdf"
+            }
+            {
+              lit: "watermark"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

@@ -1,0 +1,90 @@
+# Entity: template
+
+main: kit: entity: template: {
+
+  alias: field: {}
+
+  fields: {
+    data: {
+      h: "Data"
+      n: "data"
+      r: true
+      t: "`$OBJECT`"
+    }
+    filename: {
+      h: "Filename"
+      n: "filename"
+      r: false
+      t: "`$STRING`"
+    }
+    template: {
+      h: "Template"
+      n: "template"
+      r: true
+      t: "`$STRING`"
+    }
+  }
+
+  name: "template"
+  op: {
+    create: {
+      name: "create"
+      points: [
+        {
+          bf: [
+            "data"
+            "filename"
+            "template"
+          ]
+          co: {
+            id: "POST /v1/generate/template"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            header: [
+              {
+                k: "header"
+                n: "x_api_key"
+                or: "x-api-key"
+                r: false
+                t: "`$ANY`"
+              }
+              {
+                k: "header"
+                n: "x_rapidapi_proxy_secret"
+                or: "x-rapidapi-proxy-secret"
+                r: false
+                t: "`$ANY`"
+              }
+            ]
+          }
+          m: "POST"
+          o: "/v1/generate/template"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "v1"
+            }
+            {
+              lit: "generate"
+            }
+            {
+              lit: "template"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

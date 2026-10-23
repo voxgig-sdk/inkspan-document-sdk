@@ -1,0 +1,18 @@
+# BasicCompressFlow
+
+main: kit: flow: BasicCompressFlow:
+{
+  entity: "compress",
+  kind: "basic",
+  name: "BasicCompressFlow",
+  step: [
+    {
+      i: {
+        ref: "compress_ref01"
+      }
+
+      o: "create"
+    }
+  ],
+  "key$": "BasicCompressFlow"
+}

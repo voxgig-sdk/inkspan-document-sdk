@@ -1,0 +1,32 @@
+{
+  "existing": {
+    "table": {
+      "TABLE00": {
+        "file": "sa",
+        "id": "TABLE00"
+      },
+      "TABLE01": {
+        "file": "s14",
+        "id": "TABLE01"
+      },
+      "TABLE02": {
+        "file": "s1e",
+        "id": "TABLE02"
+      }
+    }
+  },
+  "new": {
+    "table": {
+      "table_ref01": {
+        "file": "s28"
+      }
+    }
+  },
+  "requests": {
+    "POST /v1/extract/tables": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

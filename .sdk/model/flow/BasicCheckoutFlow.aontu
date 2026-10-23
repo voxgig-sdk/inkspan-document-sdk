@@ -1,0 +1,18 @@
+# BasicCheckoutFlow
+
+main: kit: flow: BasicCheckoutFlow:
+{
+  entity: "checkout",
+  kind: "basic",
+  name: "BasicCheckoutFlow",
+  step: [
+    {
+      i: {
+        ref: "checkout_ref01"
+      }
+
+      o: "create"
+    }
+  ],
+  "key$": "BasicCheckoutFlow"
+}

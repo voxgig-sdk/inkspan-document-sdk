@@ -1,0 +1,18 @@
+# BasicTableFlow
+
+main: kit: flow: BasicTableFlow:
+{
+  entity: "table",
+  kind: "basic",
+  name: "BasicTableFlow",
+  step: [
+    {
+      i: {
+        ref: "table_ref01"
+      }
+
+      o: "create"
+    }
+  ],
+  "key$": "BasicTableFlow"
+}

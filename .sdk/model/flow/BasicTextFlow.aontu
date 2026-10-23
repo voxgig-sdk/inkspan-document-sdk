@@ -1,0 +1,18 @@
+# BasicTextFlow
+
+main: kit: flow: BasicTextFlow:
+{
+  entity: "text",
+  kind: "basic",
+  name: "BasicTextFlow",
+  step: [
+    {
+      i: {
+        ref: "text_ref01"
+      }
+
+      o: "create"
+    }
+  ],
+  "key$": "BasicTextFlow"
+}

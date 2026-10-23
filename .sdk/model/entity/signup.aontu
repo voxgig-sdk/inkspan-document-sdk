@@ -1,0 +1,55 @@
+# Entity: signup
+
+main: kit: entity: signup: {
+
+  alias: field: {}
+
+  fields: {
+    email: {
+      h: "Email"
+      n: "email"
+      r: true
+      t: "`$STRING`"
+    }
+  }
+
+  name: "signup"
+  op: {
+    create: {
+      name: "create"
+      points: [
+        {
+          bf: [
+            "email"
+          ]
+          co: {
+            id: "POST /v1/signup"
+            source: "openapi3"
+            version: 2
+          }
+          m: "POST"
+          o: "/v1/signup"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "v1"
+            }
+            {
+              lit: "signup"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

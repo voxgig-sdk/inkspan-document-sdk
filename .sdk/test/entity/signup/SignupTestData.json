@@ -1,0 +1,32 @@
+{
+  "existing": {
+    "signup": {
+      "SIGNUP00": {
+        "email": "sa",
+        "id": "SIGNUP00"
+      },
+      "SIGNUP01": {
+        "email": "s14",
+        "id": "SIGNUP01"
+      },
+      "SIGNUP02": {
+        "email": "s1e",
+        "id": "SIGNUP02"
+      }
+    }
+  },
+  "new": {
+    "signup": {
+      "signup_ref01": {
+        "email": "s28"
+      }
+    }
+  },
+  "requests": {
+    "POST /v1/signup": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

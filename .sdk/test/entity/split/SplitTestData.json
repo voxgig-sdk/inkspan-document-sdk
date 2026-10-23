@@ -1,0 +1,32 @@
+{
+  "existing": {
+    "split": {
+      "SPLIT00": {
+        "file": "sa",
+        "id": "SPLIT00"
+      },
+      "SPLIT01": {
+        "file": "s14",
+        "id": "SPLIT01"
+      },
+      "SPLIT02": {
+        "file": "s1e",
+        "id": "SPLIT02"
+      }
+    }
+  },
+  "new": {
+    "split": {
+      "split_ref01": {
+        "file": "s28"
+      }
+    }
+  },
+  "requests": {
+    "POST /v1/pdf/split": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

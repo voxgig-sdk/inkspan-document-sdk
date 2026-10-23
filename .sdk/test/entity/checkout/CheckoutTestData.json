@@ -1,0 +1,27 @@
+{
+  "existing": {
+    "checkout": {
+      "CHECKOUT00": {
+        "id": "CHECKOUT00"
+      },
+      "CHECKOUT01": {
+        "id": "CHECKOUT01"
+      },
+      "CHECKOUT02": {
+        "id": "CHECKOUT02"
+      }
+    }
+  },
+  "new": {
+    "checkout": {
+      "checkout_ref01": {}
+    }
+  },
+  "requests": {
+    "POST /v1/billing/checkout": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

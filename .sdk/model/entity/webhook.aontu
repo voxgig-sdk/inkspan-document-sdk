@@ -1,0 +1,49 @@
+# Entity: webhook
+
+main: kit: entity: webhook: {
+
+  alias: field: {}
+
+  name: "webhook"
+  op: {
+    create: {
+      name: "create"
+      points: [
+        {
+          co: {
+            id: "POST /v1/billing/webhook"
+            source: "openapi3"
+            version: 2
+          }
+          m: "POST"
+          o: "/v1/billing/webhook"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "v1"
+            }
+            {
+              lit: "billing"
+            }
+            {
+              lit: "webhook"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+  fields: {
+  }
+
+
+
+}

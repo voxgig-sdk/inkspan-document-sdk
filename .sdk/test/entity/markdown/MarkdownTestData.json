@@ -1,0 +1,36 @@
+{
+  "existing": {
+    "markdown": {
+      "MARKDOWN00": {
+        "filename": "s14",
+        "markdown": "s15",
+        "id": "MARKDOWN00"
+      },
+      "MARKDOWN01": {
+        "filename": "s28",
+        "markdown": "s29",
+        "id": "MARKDOWN01"
+      },
+      "MARKDOWN02": {
+        "filename": "s3c",
+        "markdown": "s3d",
+        "id": "MARKDOWN02"
+      }
+    }
+  },
+  "new": {
+    "markdown": {
+      "markdown_ref01": {
+        "filename": "s50",
+        "markdown": "s51"
+      }
+    }
+  },
+  "requests": {
+    "POST /v1/generate/markdown": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "existing": {
+    "men": {
+      "MEN00": {
+        "id": "MEN00"
+      },
+      "MEN01": {
+        "id": "MEN01"
+      },
+      "MEN02": {
+        "id": "MEN02"
+      }
+    }
+  },
+  "new": {
+    "men": {
+      "men_ref01": {}
+    }
+  },
+  "requests": {
+    "GET /v1/me": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+# BasicInboundFlow
+
+main: kit: flow: BasicInboundFlow:
+{
+  entity: "inbound",
+  kind: "basic",
+  name: "BasicInboundFlow",
+  step: [
+    {
+      i: {
+        ref: "inbound_ref01"
+      }
+
+      o: "create"
+    }
+  ],
+  "key$": "BasicInboundFlow"
+}

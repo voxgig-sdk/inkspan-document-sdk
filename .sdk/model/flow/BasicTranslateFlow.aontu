@@ -1,0 +1,18 @@
+# BasicTranslateFlow
+
+main: kit: flow: BasicTranslateFlow:
+{
+  entity: "translate",
+  kind: "basic",
+  name: "BasicTranslateFlow",
+  step: [
+    {
+      i: {
+        ref: "translate_ref01"
+      }
+
+      o: "create"
+    }
+  ],
+  "key$": "BasicTranslateFlow"
+}

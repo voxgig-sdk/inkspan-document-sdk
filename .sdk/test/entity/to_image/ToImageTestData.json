@@ -1,0 +1,36 @@
+{
+  "existing": {
+    "to_image": {
+      "TO_IMAGE00": {
+        "dpi": 20,
+        "file": "s15",
+        "id": "TO_IMAGE00"
+      },
+      "TO_IMAGE01": {
+        "dpi": 40,
+        "file": "s29",
+        "id": "TO_IMAGE01"
+      },
+      "TO_IMAGE02": {
+        "dpi": 60,
+        "file": "s3d",
+        "id": "TO_IMAGE02"
+      }
+    }
+  },
+  "new": {
+    "to_image": {
+      "to_image_ref01": {
+        "dpi": 80,
+        "file": "s51"
+      }
+    }
+  },
+  "requests": {
+    "POST /v1/pdf/to-images": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

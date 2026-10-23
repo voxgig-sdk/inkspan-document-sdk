@@ -1,0 +1,36 @@
+{
+  "existing": {
+    "fill_form": {
+      "FILL_FORM00": {
+        "fields": "s14",
+        "file": "s15",
+        "id": "FILL_FORM00"
+      },
+      "FILL_FORM01": {
+        "fields": "s28",
+        "file": "s29",
+        "id": "FILL_FORM01"
+      },
+      "FILL_FORM02": {
+        "fields": "s3c",
+        "file": "s3d",
+        "id": "FILL_FORM02"
+      }
+    }
+  },
+  "new": {
+    "fill_form": {
+      "fill_form_ref01": {
+        "fields": "s50",
+        "file": "s51"
+      }
+    }
+  },
+  "requests": {
+    "POST /v1/pdf/fill-form": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

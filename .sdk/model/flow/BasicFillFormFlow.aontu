@@ -1,0 +1,18 @@
+# BasicFillFormFlow
+
+main: kit: flow: BasicFillFormFlow:
+{
+  entity: "fill_form",
+  kind: "basic",
+  name: "BasicFillFormFlow",
+  step: [
+    {
+      i: {
+        ref: "fill_form_ref01"
+      }
+
+      o: "create"
+    }
+  ],
+  "key$": "BasicFillFormFlow"
+}

@@ -1,0 +1,27 @@
+{
+  "existing": {
+    "webhook": {
+      "WEBHOOK00": {
+        "id": "WEBHOOK00"
+      },
+      "WEBHOOK01": {
+        "id": "WEBHOOK01"
+      },
+      "WEBHOOK02": {
+        "id": "WEBHOOK02"
+      }
+    }
+  },
+  "new": {
+    "webhook": {
+      "webhook_ref01": {}
+    }
+  },
+  "requests": {
+    "POST /v1/billing/webhook": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

@@ -1,0 +1,131 @@
+# Generated from the API definition and overwritten on every build: do not
+# edit this file. Put customizations in the guide entry file, which includes
+# this one and overrides its defaults:
+#   guide.aontu
+
+guide: {
+  metrics: count: entity: 20
+  metrics: count: path: 20
+  metrics: count: method: 20
+
+  entity: checkout: {
+    path: "/v1/billing/checkout": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: compress: {
+    path: "/v1/pdf/compress": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: fill_form: {
+    path: "/v1/pdf/fill-form": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: health: {
+    path: "/health": {
+      op: load: method: *GET
+    }
+  }
+
+  entity: html: {
+    path: "/v1/generate/html": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: inbound: {
+    path: "/webhooks/inbound": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: markdown: {
+    path: "/v1/generate/markdown": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: men: {
+    path: "/v1/me": {
+      op: load: method: *GET
+    }
+  }
+
+  entity: merge: {
+    path: "/v1/pdf/merge": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: portal: {
+    path: "/v1/billing/portal": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: root_get: {
+    path: "/": {
+      op: load: method: *GET
+    }
+  }
+
+  entity: signup: {
+    path: "/v1/signup": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: split: {
+    path: "/v1/pdf/split": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: table: {
+    path: "/v1/extract/tables": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: template: {
+    path: "/v1/generate/template": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: text: {
+    path: "/v1/extract/text": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: to_image: {
+    path: "/v1/pdf/to-images": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: translate: {
+    path: "/v1/translate": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: watermark: {
+    path: "/v1/pdf/watermark": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: webhook: {
+    path: "/v1/billing/webhook": {
+      op: create: method: *POST
+    }
+  }
+
+}

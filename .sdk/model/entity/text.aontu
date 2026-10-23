@@ -1,0 +1,84 @@
+# Entity: text
+
+main: kit: entity: text: {
+
+  alias: field: {}
+
+  fields: {
+    file: {
+      h: "File"
+      n: "file"
+      r: true
+      t: "`$STRING`"
+    }
+  }
+
+  name: "text"
+  op: {
+    create: {
+      name: "create"
+      points: [
+        {
+          co: {
+            id: "POST /v1/extract/text"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            header: [
+              {
+                k: "header"
+                n: "x_api_key"
+                or: "x-api-key"
+                r: false
+                t: "`$ANY`"
+              }
+              {
+                k: "header"
+                n: "x_rapidapi_proxy_secret"
+                or: "x-rapidapi-proxy-secret"
+                r: false
+                t: "`$ANY`"
+              }
+            ]
+          }
+          m: "POST"
+          o: "/v1/extract/text"
+          rb: {
+            fields: [
+              {
+                binary: true
+                media: "application/octet-stream"
+                name: "file"
+              }
+            ]
+            kind: "multipart"
+            media: "multipart/form-data"
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "v1"
+            }
+            {
+              lit: "extract"
+            }
+            {
+              lit: "text"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

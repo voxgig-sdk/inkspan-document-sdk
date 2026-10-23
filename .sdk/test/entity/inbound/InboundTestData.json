@@ -1,0 +1,27 @@
+{
+  "existing": {
+    "inbound": {
+      "INBOUND00": {
+        "id": "INBOUND00"
+      },
+      "INBOUND01": {
+        "id": "INBOUND01"
+      },
+      "INBOUND02": {
+        "id": "INBOUND02"
+      }
+    }
+  },
+  "new": {
+    "inbound": {
+      "inbound_ref01": {}
+    }
+  },
+  "requests": {
+    "POST /webhooks/inbound": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

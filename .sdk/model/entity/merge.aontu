@@ -1,0 +1,85 @@
+# Entity: merge
+
+main: kit: entity: merge: {
+
+  alias: field: {}
+
+  fields: {
+    files: {
+      h: "Files"
+      n: "files"
+      r: true
+      t: "`$ARRAY`"
+    }
+  }
+
+  name: "merge"
+  op: {
+    create: {
+      name: "create"
+      points: [
+        {
+          co: {
+            id: "POST /v1/pdf/merge"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            header: [
+              {
+                k: "header"
+                n: "x_api_key"
+                or: "x-api-key"
+                r: false
+                t: "`$ANY`"
+              }
+              {
+                k: "header"
+                n: "x_rapidapi_proxy_secret"
+                or: "x-rapidapi-proxy-secret"
+                r: false
+                t: "`$ANY`"
+              }
+            ]
+          }
+          m: "POST"
+          o: "/v1/pdf/merge"
+          rb: {
+            fields: [
+              {
+                binary: true
+                list: true
+                media: "application/octet-stream"
+                name: "files"
+              }
+            ]
+            kind: "multipart"
+            media: "multipart/form-data"
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "v1"
+            }
+            {
+              lit: "pdf"
+            }
+            {
+              lit: "merge"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

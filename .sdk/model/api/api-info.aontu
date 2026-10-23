@@ -1,0 +1,22 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      auth: false
+      description: "The document I/O layer for developers & AI agents."
+      servers: [
+        {
+          description: "Production server"
+          url: "https://api.inkspan.dev"
+        }
+      ]
+      summary: "The document I/O layer for developers & AI agents."
+      title: "Inkspan API"
+      version: "0.3.0"
+      website: "https://inkspan.dev"
+    }
+  }
+}
+

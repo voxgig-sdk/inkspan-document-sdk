@@ -1,0 +1,27 @@
+{
+  "existing": {
+    "portal": {
+      "PORTAL00": {
+        "id": "PORTAL00"
+      },
+      "PORTAL01": {
+        "id": "PORTAL01"
+      },
+      "PORTAL02": {
+        "id": "PORTAL02"
+      }
+    }
+  },
+  "new": {
+    "portal": {
+      "portal_ref01": {}
+    }
+  },
+  "requests": {
+    "POST /v1/billing/portal": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

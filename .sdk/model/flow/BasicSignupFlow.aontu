@@ -1,0 +1,18 @@
+# BasicSignupFlow
+
+main: kit: flow: BasicSignupFlow:
+{
+  entity: "signup",
+  kind: "basic",
+  name: "BasicSignupFlow",
+  step: [
+    {
+      i: {
+        ref: "signup_ref01"
+      }
+
+      o: "create"
+    }
+  ],
+  "key$": "BasicSignupFlow"
+}

@@ -1,0 +1,32 @@
+{
+  "existing": {
+    "text": {
+      "TEXT00": {
+        "file": "sa",
+        "id": "TEXT00"
+      },
+      "TEXT01": {
+        "file": "s14",
+        "id": "TEXT01"
+      },
+      "TEXT02": {
+        "file": "s1e",
+        "id": "TEXT02"
+      }
+    }
+  },
+  "new": {
+    "text": {
+      "text_ref01": {
+        "file": "s28"
+      }
+    }
+  },
+  "requests": {
+    "POST /v1/extract/text": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

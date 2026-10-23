@@ -1,0 +1,83 @@
+# Entity: html
+
+main: kit: entity: html: {
+
+  alias: field: {}
+
+  fields: {
+    filename: {
+      h: "Filename"
+      n: "filename"
+      r: false
+      t: "`$STRING`"
+    }
+    html: {
+      h: "Html"
+      n: "html"
+      r: true
+      t: "`$STRING`"
+    }
+  }
+
+  name: "html"
+  op: {
+    create: {
+      name: "create"
+      points: [
+        {
+          bf: [
+            "filename"
+            "html"
+          ]
+          co: {
+            id: "POST /v1/generate/html"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            header: [
+              {
+                k: "header"
+                n: "x_api_key"
+                or: "x-api-key"
+                r: false
+                t: "`$ANY`"
+              }
+              {
+                k: "header"
+                n: "x_rapidapi_proxy_secret"
+                or: "x-rapidapi-proxy-secret"
+                r: false
+                t: "`$ANY`"
+              }
+            ]
+          }
+          m: "POST"
+          o: "/v1/generate/html"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "v1"
+            }
+            {
+              lit: "generate"
+            }
+            {
+              lit: "html"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

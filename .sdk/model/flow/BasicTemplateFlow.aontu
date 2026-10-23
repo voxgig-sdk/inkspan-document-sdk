@@ -1,0 +1,18 @@
+# BasicTemplateFlow
+
+main: kit: flow: BasicTemplateFlow:
+{
+  entity: "template",
+  kind: "basic",
+  name: "BasicTemplateFlow",
+  step: [
+    {
+      i: {
+        ref: "template_ref01"
+      }
+
+      o: "create"
+    }
+  ],
+  "key$": "BasicTemplateFlow"
+}

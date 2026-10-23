@@ -1,0 +1,36 @@
+{
+  "existing": {
+    "watermark": {
+      "WATERMARK00": {
+        "file": "s14",
+        "text": "s15",
+        "id": "WATERMARK00"
+      },
+      "WATERMARK01": {
+        "file": "s28",
+        "text": "s29",
+        "id": "WATERMARK01"
+      },
+      "WATERMARK02": {
+        "file": "s3c",
+        "text": "s3d",
+        "id": "WATERMARK02"
+      }
+    }
+  },
+  "new": {
+    "watermark": {
+      "watermark_ref01": {
+        "file": "s50",
+        "text": "s51"
+      }
+    }
+  },
+  "requests": {
+    "POST /v1/pdf/watermark": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

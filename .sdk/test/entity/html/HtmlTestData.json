@@ -1,0 +1,36 @@
+{
+  "existing": {
+    "html": {
+      "HTML00": {
+        "filename": "s14",
+        "html": "s15",
+        "id": "HTML00"
+      },
+      "HTML01": {
+        "filename": "s28",
+        "html": "s29",
+        "id": "HTML01"
+      },
+      "HTML02": {
+        "filename": "s3c",
+        "html": "s3d",
+        "id": "HTML02"
+      }
+    }
+  },
+  "new": {
+    "html": {
+      "html_ref01": {
+        "filename": "s50",
+        "html": "s51"
+      }
+    }
+  },
+  "requests": {
+    "POST /v1/generate/html": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

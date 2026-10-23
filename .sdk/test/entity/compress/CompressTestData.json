@@ -1,0 +1,32 @@
+{
+  "existing": {
+    "compress": {
+      "COMPRESS00": {
+        "file": "sa",
+        "id": "COMPRESS00"
+      },
+      "COMPRESS01": {
+        "file": "s14",
+        "id": "COMPRESS01"
+      },
+      "COMPRESS02": {
+        "file": "s1e",
+        "id": "COMPRESS02"
+      }
+    }
+  },
+  "new": {
+    "compress": {
+      "compress_ref01": {
+        "file": "s28"
+      }
+    }
+  },
+  "requests": {
+    "POST /v1/pdf/compress": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

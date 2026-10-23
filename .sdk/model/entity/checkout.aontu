@@ -1,0 +1,74 @@
+# Entity: checkout
+
+main: kit: entity: checkout: {
+
+  alias: field: {}
+
+  name: "checkout"
+  op: {
+    create: {
+      name: "create"
+      points: [
+        {
+          co: {
+            id: "POST /v1/billing/checkout"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            header: [
+              {
+                k: "header"
+                n: "x_api_key"
+                or: "x-api-key"
+                r: false
+                t: "`$ANY`"
+              }
+            ]
+            query: [
+              {
+                k: "query"
+                n: "plan"
+                or: "plan"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "POST"
+          o: "/v1/billing/checkout"
+          q: {
+            exist: [
+              "plan"
+            ]
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "v1"
+            }
+            {
+              lit: "billing"
+            }
+            {
+              lit: "checkout"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+  fields: {
+  }
+
+
+
+}

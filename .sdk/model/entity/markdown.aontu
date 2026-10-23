@@ -1,0 +1,83 @@
+# Entity: markdown
+
+main: kit: entity: markdown: {
+
+  alias: field: {}
+
+  fields: {
+    filename: {
+      h: "Filename"
+      n: "filename"
+      r: false
+      t: "`$STRING`"
+    }
+    markdown: {
+      h: "Markdown"
+      n: "markdown"
+      r: true
+      t: "`$STRING`"
+    }
+  }
+
+  name: "markdown"
+  op: {
+    create: {
+      name: "create"
+      points: [
+        {
+          bf: [
+            "filename"
+            "markdown"
+          ]
+          co: {
+            id: "POST /v1/generate/markdown"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            header: [
+              {
+                k: "header"
+                n: "x_api_key"
+                or: "x-api-key"
+                r: false
+                t: "`$ANY`"
+              }
+              {
+                k: "header"
+                n: "x_rapidapi_proxy_secret"
+                or: "x-rapidapi-proxy-secret"
+                r: false
+                t: "`$ANY`"
+              }
+            ]
+          }
+          m: "POST"
+          o: "/v1/generate/markdown"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "v1"
+            }
+            {
+              lit: "generate"
+            }
+            {
+              lit: "markdown"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

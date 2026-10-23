@@ -1,0 +1,106 @@
+# Entity: translate
+
+main: kit: entity: translate: {
+
+  alias: field: {}
+
+  fields: {
+    file: {
+      h: "File"
+      n: "file"
+      r: false
+      t: "`$ANY`"
+    }
+    output: {
+      h: "Output"
+      n: "output"
+      r: false
+      t: "`$STRING`"
+    }
+    target_language: {
+      h: "Target Language"
+      n: "target_language"
+      r: true
+      t: "`$STRING`"
+    }
+    text: {
+      h: "Text"
+      n: "text"
+      r: false
+      t: "`$ANY`"
+    }
+  }
+
+  name: "translate"
+  op: {
+    create: {
+      name: "create"
+      points: [
+        {
+          co: {
+            id: "POST /v1/translate"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            header: [
+              {
+                k: "header"
+                n: "x_api_key"
+                or: "x-api-key"
+                r: false
+                t: "`$ANY`"
+              }
+              {
+                k: "header"
+                n: "x_rapidapi_proxy_secret"
+                or: "x-rapidapi-proxy-secret"
+                r: false
+                t: "`$ANY`"
+              }
+            ]
+          }
+          m: "POST"
+          o: "/v1/translate"
+          rb: {
+            fields: [
+              {
+                name: "file"
+              }
+              {
+                name: "output"
+              }
+              {
+                name: "target_language"
+              }
+              {
+                name: "text"
+              }
+            ]
+            kind: "multipart"
+            media: "multipart/form-data"
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "v1"
+            }
+            {
+              lit: "translate"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

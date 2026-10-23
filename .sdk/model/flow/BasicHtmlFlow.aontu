@@ -1,0 +1,18 @@
+# BasicHtmlFlow
+
+main: kit: flow: BasicHtmlFlow:
+{
+  entity: "html",
+  kind: "basic",
+  name: "BasicHtmlFlow",
+  step: [
+    {
+      i: {
+        ref: "html_ref01"
+      }
+
+      o: "create"
+    }
+  ],
+  "key$": "BasicHtmlFlow"
+}

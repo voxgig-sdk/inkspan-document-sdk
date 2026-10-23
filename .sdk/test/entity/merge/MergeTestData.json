@@ -1,0 +1,32 @@
+{
+  "existing": {
+    "merge": {
+      "MERGE00": {
+        "files": [],
+        "id": "MERGE00"
+      },
+      "MERGE01": {
+        "files": [],
+        "id": "MERGE01"
+      },
+      "MERGE02": {
+        "files": [],
+        "id": "MERGE02"
+      }
+    }
+  },
+  "new": {
+    "merge": {
+      "merge_ref01": {
+        "files": []
+      }
+    }
+  },
+  "requests": {
+    "POST /v1/pdf/merge": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

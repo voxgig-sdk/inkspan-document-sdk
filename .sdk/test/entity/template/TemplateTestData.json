@@ -1,0 +1,40 @@
+{
+  "existing": {
+    "template": {
+      "TEMPLATE00": {
+        "data": {},
+        "filename": "s1f",
+        "template": "s20",
+        "id": "TEMPLATE00"
+      },
+      "TEMPLATE01": {
+        "data": {},
+        "filename": "s3d",
+        "template": "s3e",
+        "id": "TEMPLATE01"
+      },
+      "TEMPLATE02": {
+        "data": {},
+        "filename": "s5b",
+        "template": "s5c",
+        "id": "TEMPLATE02"
+      }
+    }
+  },
+  "new": {
+    "template": {
+      "template_ref01": {
+        "data": {},
+        "filename": "s79",
+        "template": "s7a"
+      }
+    }
+  },
+  "requests": {
+    "POST /v1/generate/template": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

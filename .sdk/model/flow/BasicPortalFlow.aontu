@@ -1,0 +1,18 @@
+# BasicPortalFlow
+
+main: kit: flow: BasicPortalFlow:
+{
+  entity: "portal",
+  kind: "basic",
+  name: "BasicPortalFlow",
+  step: [
+    {
+      i: {
+        ref: "portal_ref01"
+      }
+
+      o: "create"
+    }
+  ],
+  "key$": "BasicPortalFlow"
+}
